@@ -1,10 +1,10 @@
-name: first-workflow
+name: My first workflow pipeline
 on: workflow_dispatch
 jobs:
-  first-job:
+  checkout:
     runs-on: ubuntu-latest
     steps:
-    -  name: print hello
-       run: echo "hello"
-    -  name: pring goodbye
-       run:  echo "goodbye"
+    - name: print gitrepo
+      run: echo "mygit repo"
+    - name: print end of pipeline
+      run: echo "pipeline execution completed"
